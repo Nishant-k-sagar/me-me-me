@@ -1,0 +1,625 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nishant K Sagar - portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;800&family=Playfair+Display:wght@700&family=Permanent+Marker&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/whispering-signature-personal-use" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/calligraphy-brillian" rel="stylesheet">
+    <link href="style.css" rel="stylesheet">
+</head>
+
+<body class="portfolio">
+
+    <div id="preloader">
+        <div class="loader-ring"></div>
+    </div>
+
+    <div id="cursor-dot"></div>
+    <div id="cursor-ring"></div>
+
+    <header class="fixed w-full py-4 px-8 z-50 box-shadow">
+        <div class="container mx-auto flex justify-between items-center">
+            <a href="#" class="text-xl font-bold tracking-wider interactive-link accent-color">Nishant K Sagar</a>
+            <nav class="hidden md:flex items-center space-x-8">
+                <a href="#about" class="link-underline interactive-link">About</a>
+                <a href="#skills" class="link-underline interactive-link">Skills</a>
+                <a href="#profiles" class="link-underline interactive-link">Profiles</a>
+                <a href="#experience" class="link-underline interactive-link">Experience</a>
+                <a href="#projects" class="link-underline interactive-link">Projects</a>
+                <a href="#testimonials" class="link-underline interactive-link">Testimonials</a>
+                <a href="#contact"
+                    class="bg-accent-color text-black font-bold py-2 px-4 rounded-lg interactive-glow interactive-link transition-transform duration-300">Contact
+                    Me</a>
+            </nav>
+            <button id="mobile-menu-button" class="md:hidden text-2xl interactive-link">☰</button>
+        </div>
+    </header>
+
+    <div id="mobile-menu-backdrop" class="mobile-menu-backdrop">
+        <div id="mobile-menu">
+            <button id="mobile-menu-close-button"
+                class="absolute top-4 right-4 text-3xl text-gray-400 hover:text-white transition-colors interactive-link">&times;</button>
+            <div class="flex flex-col w-full space-y-2 mt-10">
+                <a href="#about" class="mobile-link interactive-link">About</a>
+                <a href="#skills" class="mobile-link interactive-link">Skills</a>
+                <a href="#profiles" class="mobile-link interactive-link">Profiles</a>
+                <a href="#experience" class="mobile-link interactive-link">Experience</a>
+                <a href="#projects" class="mobile-link interactive-link">Projects</a>
+                <a href="#testimonials" class="mobile-link interactive-link">Testimonials</a>
+                <a href="#contact" class="mobile-link interactive-link">Contact</a>
+            </div>
+        </div>
+    </div>
+
+    <main class="container mx-auto px-6 md:px-12">
+
+        <section id="home" class="min-h-screen flex flex-col justify-center items-start">
+            <div class="max-w-3xl">
+                <p id="greeting-text" class="text-3xl font-bolder md:text-4xl -mt-8 mb-20 font-bolder"></p>
+                <p class="text-lg md:text-xl accent-color mb-4 reveal">My name is</p>
+                <h1 class="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 reveal"
+                    style="transition-delay: 50ms;">Nishant K Sagar</h1>
+                <h2 class="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-400 mb-8 reveal"
+                    style="transition-delay: 50ms;">I am <span id="typewriter" class="accent-color"></span><span
+                        class="typewriter-cursor"></span></h2>
+                <p class="text-lg md:text-xl max-w-2xl mb-12 reveal text-gray-300" style="transition-delay: 300ms;">
+                    You got me at second statement ! Grammar mistake, is it? But I do more than grammar. So... <span
+                        class="font-bold text-4xl accent-color">↴</span>
+                </p>
+                <a href="#projects"
+                    class="bg-accent-color text-black font-bold py-4 px-8 rounded-lg text-lg interactive-glow interactive-link transition-transform duration-300 reveal"
+                    style="transition-delay: 400ms;">
+                    Explore My Work
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 md:py-40">
+            <div class="grid grid-cols-1 md:grid-cols-5 gap-16 items-center">
+                <div class="md:col-span-3 reveal">
+                    <h2 class="text-3xl md:text-4xl font-bold text-white mb-8">
+                        <span class="accent-color">01.</span> About Me
+                    </h2>
+                    <div class="space-y-6 text-lg text-gray-300">
+                        <p>
+                            I am Nishant K Sagar, a developer based in India. I started my development journey in 2022
+                            in first year of my graduation. Currently, I am pursuing B.Tech in computer science
+                            engineering from IIIT Jabalpur and will be completing in 2026.
+                        </p>
+                        <p>
+                            I have refined my algorithmic knowledge & skills while having strong foundation in data
+                            structures and algorithms. I do participate in competitive programming contests on regular
+                            basis.
+                        </p>
+                        <p>
+                            Despite the above description, I am great fond of music and write sometimes too which
+                            improved my understanding of both of the languages Hindi and English resulting into better
+                            communicator. I am one of the top 0.5% chess player(at some time in life ⋆˙⟡) on chess.com.
+                        </p>
+                    </div>
+                </div>
+                <div class="md:col-span-2 flex justify-center items-center reveal" style="transition-delay: 200ms;">
+                    <div data-tilt data-tilt-max="10" data-tilt-scale="1.05"
+                        class="w-64 h-64 md:w-80 md:h-80 rounded-lg bg-card border-2 border-card relative interactive-glow transition-transform duration-300">
+                        <img src="https://placehold.co/400x400/12181F/E6E6E6?text=Nishant's+Photo"
+                            alt="A professional headshot of Nishant K Sagar"
+                            class="rounded-lg absolute inset-0 w-full h-full object-cover" style="z-index: 1;">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="py-12 md:py-40">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 text-center reveal">
+                <span class="accent-color">02.</span> My Technical Skills
+            </h2>
+            <div class="max-w-4xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div class="bg-card p-8 rounded-lg border border-card reveal">
+                    <h3 class="text-2xl font-bold text-white mb-4">Languages</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>TypeScript</li>
+                        <li>Python</li>
+                        <li>SQL</li>
+                    </ul>
+                </div>
+                <div class="bg-card p-8 rounded-lg border border-card reveal" style="transition-delay: 150ms;">
+                    <h3 class="text-2xl font-bold text-white mb-4">Frameworks</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>React & Next.js</li>
+                        <li>Node.js & Express</li>
+                        <li>Tailwind CSS</li>
+                        <li>Flask / Django</li>
+                    </ul>
+                </div>
+                <div class="bg-card p-8 rounded-lg border border-card reveal" style="transition-delay: 300ms;">
+                    <h3 class="text-2xl font-bold text-white mb-4">Tools & Platforms</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Git & GitHub</li>
+                        <li>Docker</li>
+                        <li>Vercel, render, railway.app</li>
+                        <li>PostgreSQL</li>
+                        <li>Figma</li>
+                    </ul>
+                </div>
+                <div class="bg-card p-8 rounded-lg border border-card reveal" style="transition-delay: 300ms;">
+                    <h3 class="text-2xl font-bold text-white mb-4">Databases</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>mongoDB</li>
+                        <li>MySQL</li>
+                        <li>postgreSQL</li>
+                        <li>NoSQL</li>
+                        <li>Firebase real-time db</li>
+                    </ul>
+                </div>
+                <div class="bg-card p-8 rounded-lg border border-card reveal" style="transition-delay: 300ms;">
+                    <h3 class="text-2xl font-bold text-white mb-4">Familiar with</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li>Java</li>
+                        <li>PHP</li>
+                        <li>Flutter</li>
+                        <li>Android Studio</li>
+                        <li>LLMs - proficient</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="profiles" class="py-24 md:py-40">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 text-center reveal">
+                <span class="accent-color">03.</span> Coding Profiles
+            </h2>
+            <div class="max-w-5xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8">
+                <a href="https://leetcode.com/u/nottryingenouf/" target="_blank" rel="noopener noreferrer"
+                    class="bg-card p-6 rounded-lg border border-card text-center interactive-glow transition-transform duration-300 reveal interactive-link flex flex-col justify-between">
+                    <div>
+                        <img src="https://assets.leetcode.com/static_assets/public/images/LeetCode_logo_rvs.png"
+                            alt="LeetCode Logo" class="h-12 mx-auto mb-4" style="filter: brightness(0) invert(1);">
+                        <h3 class="text-xl font-bold text-white mb-4">LeetCode</h3>
+                    </div>
+                    <div class="mt-4 flex justify-around text-sm text-gray-400 border-t border-gray-700 pt-4">
+                        <div>
+                            <p class="font-bold text-white text-lg">2100+</p>
+                            <p class="text-xs uppercase tracking-widest">Max Rating</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-lg">400+</p>
+                            <p class="text-xs uppercase tracking-widest">Solved</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://www.codechef.com/users/nottryingenouf" target="_blank" rel="noopener noreferrer"
+                    class="bg-card p-6 rounded-lg border border-card text-center interactive-glow transition-transform duration-300 reveal interactive-link flex flex-col justify-between"
+                    style="transition-delay: 150ms;">
+                    <div>
+                        <img src="https://img.icons8.com/?size=100&id=vAtJFm3hwtQw&format=png&color=000000"
+                            alt="Codechef Logo" class="h-12 mx-auto mb-4" style="filter: brightness(0) invert(1);">
+                        <h3 class="text-xl font-bold text-white mb-4">CodeChef <span class="text-green-500 mt-10"> (3 ★)</span></h3>
+                    </div>
+                    <div class="mt-4 flex justify-around text-sm text-gray-400 border-t border-gray-700 pt-4">
+                        <div>
+                            <p class="font-bold text-white text-lg">1642+</p>
+                            <p class="text-xs uppercase tracking-widest">Max Rating</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-lg">150+</p>
+                            <p class="text-xs uppercase tracking-widest">Solved</p>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://codeforces.com/profile/nottryingenouf" target="_blank" rel="noopener noreferrer"
+                    class="bg-card p-6 rounded-lg border border-card text-center interactive-glow transition-transform duration-300 reveal interactive-link flex flex-col justify-between"
+                    style="transition-delay: 300ms;">
+                    <div>
+                        <svg class="h-10 w-10 mx-auto mb-4 text-white" role="img" viewBox="0 0 24 24"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <title>Codeforces</title>
+                            <path
+                                d="M4.583 4.125h2.47v10.375h-2.47zm3.584 6.875h2.47v3.5h-2.47zm3.583-3.833h2.47v7.333h-2.47zm3.584-3.042h2.47v10.375h-2.47zM0 20.875h24v-1.625H0z"
+                                fill="currentColor" />
+                        </svg>
+                        <h3 class="text-xl font-bold text-white mb-4">Codeforces <span class="text-green-500 mt-10"> (pupil)</span></h3>
+                    </div>
+                    <div class="mt-4 flex justify-around text-sm text-gray-400 border-t border-gray-700 pt-4">
+                        <div>
+                            <p class="font-bold text-white text-lg">1294+</p>
+                            <p class="text-xs uppercase tracking-widest">Max Rating</p>
+                        </div>
+                        <div>
+                            <p class="font-bold text-white text-lg">80+</p>
+                            <p class="text-xs uppercase tracking-widest">Solved</p>
+                        </div>
+                    </div>
+                </a>
+
+            </div>
+        </section>
+
+        <section id="experience" class="py-24 md:py-40">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 text-center reveal">
+                <span class="accent-color">04.</span> Where I've Worked
+            </h2>
+            <div class="max-w-3xl mx-auto relative">
+                <div class="absolute left-4 md:left-1/2 top-0 h-full w-0.5 bg-card"></div>
+                <div class="relative mb-12 reveal">
+                    <div class="absolute left-4 md:left-1/2 top-2 -ml-2 w-4 h-4 rounded-full bg-accent-color"></div>
+                    <div class="ml-10 md:ml-0 md:flex items-center">
+                        <div class="md:w-1/2 md:pr-8 md:text-right">
+                            <p class="text-gray-400">2024</p>
+                            <h3 class="text-2xl font-bold text-white">web developer</h3>
+                            <p class="accent-color font-semibold">FUSION IIITDMJ</p>
+                        </div>
+                        <div class="md:w-1/2 md:pl-8 mt-4 md:mt-0">
+                            <div class="bg-card p-6 rounded-lg border border-card">
+                                <ul class="list-disc list-inside space-y-2 text-gray-300">
+                                    <li>Used variou AI models to study their effectiveness in web development</li>
+                                    <li>Using AI models developed neat and clean web components using web dev skills when needed</li>
+                                    <li>Suggested Improvements for Module-Component Management System</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="relative mb-12 reveal">
+                    <div class="absolute left-4 md:left-1/2 top-2 -ml-2 w-4 h-4 rounded-full bg-accent-color"></div>
+                    <div class="ml-10 md:ml-0 md:flex flex-row-reverse items-center">
+                        <div class="md:w-1/2 md:pl-8 md:text-left">
+                            <p class="text-gray-400">2025-current</p>
+                            <h3 class="text-2xl font-bold text-white">Full stack Developer</h3>
+                            <p class="accent-color font-semibold">Samvaad-website</p>
+                        </div>
+                        <div class="md:w-1/2 md:pr-8 mt-4 md:mt-0">
+                            <div class="bg-card p-6 rounded-lg border border-card">
+                                <ul class="list-disc list-inside space-y-2 text-gray-300">
+                                    <li>Developing samvaad-website for the cultural fraternity IIIT Jabalpur
+                                    </li>
+                                    <li>Desinged and developed architecture of complete scaled website</li>
+                                    <li>Made content management system for updating the website without changing the codebase</li>
+                                    <li>Implemented Admin panel with all privileges for CMS</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 md:py-40">
+            <h2 class="text-3xl md:text-4xl font-bold text-white mb-16 text-center reveal">
+                <span class="accent-color">05.</span> Some Things I've Built
+            </h2>
+        
+            <div class="grid grid-cols-1 grid-rows-1 items-center">
+        
+                <div id="projects-container" class="horizontal-scroll-container col-start-1 row-start-1 flex overflow-x-auto space-x-8 pb-8 snap-x snap-mandatory">
+                    
+                    <div data-tilt data-tilt-max="8" data-tilt-scale="1.03"
+                        class="bg-card rounded-lg border border-card p-6 flex flex-col justify-between interactive-glow transition-transform duration-300 reveal flex-shrink-0 w-[90%] sm:w-2/3 md:w-1/2 lg:w-[30%] snap-center">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-accent-color">
+                                    <path
+                                        d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16z">
+                                    </path>
+                                    <polyline points="3.27 6.96 12 12.01 20.73 6.96"></polyline>
+                                    <line x1="12" y1="22.08" x2="12" y2="12"></line>
+                                </svg>
+                                <div class="flex space-x-4 text-gray-400">
+                                    <a href="https://github.com/Nishant-k-sagar/Samvaad-website" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg></a>
+                                    <a href="https://github.com/Nishant-k-sagar/Samvaad-website" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">samvaad-website</h3>
+                            <p class="text-gray-400 mb-4">Official website for samvaad-cultural fraternity of IIITDMJ</p>
+                        </div>
+                        <div class="flex flex-wrap text-sm text-gray-400 mt-4">
+                            <span class="mr-4 mb-2">Type</span>
+                            <span class="mr-4 mb-2">PHP</span>
+                            <span class="mr-4 mb-2">MySQL</span>
+                            <span class="mr-4 mb-2">JavaScript</span>
+                        </div>
+                    </div>
+        
+                    <div data-tilt data-tilt-max="8" data-tilt-scale="1.03"
+                        class="bg-card rounded-lg border border-card p-6 flex flex-col justify-between interactive-glow transition-transform duration-300 reveal flex-shrink-0 w-[90%] sm:w-2/3 md:w-1/2 lg:w-[30%] snap-center"
+                        style="transition-delay: 150ms;">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-accent-color">
+                                    <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                                    <path d="M2 17l10 5 10-5"></path>
+                                    <path d="M2 12l10 5 10-5"></path>
+                                </svg>
+                                <div class="flex space-x-4 text-gray-400">
+                                    <a href="https://github.com/Nishant-k-sagar/AceTheMock" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg></a>
+                                    <a href="https://ace-the-mock.vercel.app/" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">AceTheMock</h3>
+                            <p class="text-gray-400 mb-4">A mock interview platform. Candidates can fill their experience and start the AI based interview which in result gives the feedback on the basis of AI generated responses.</p>
+                        </div>
+                        <div class="flex flex-wrap text-sm text-gray-400 mt-4">
+                            <span class="mr-4 mb-2">react.js</span>
+                            <span class="mr-4 mb-2">node.js</span>
+                            <span class="mr-4 mb-2">GeminiAPI</span>
+                            <span class="mr-4 mb-2">javaScript</span>
+                            <span class="mr-4 mb-2">firebase</span>
+                        </div>
+                    </div>
+                    
+                    <div data-tilt data-tilt-max="8" data-tilt-scale="1.03"
+                        class="bg-card rounded-lg border border-card p-6 flex flex-col justify-between interactive-glow transition-transform duration-300 reveal flex-shrink-0 w-[90%] sm:w-2/3 md:w-1/2 lg:w-[30%] snap-center"
+                        style="transition-delay: 300ms;">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round"
+                                    stroke-linejoin="round" class="text-accent-color">
+                                    <path d="M17.5 19H9a7 7 0 1 1 6.71-9h1.79a4.5 4.5 0 1 1 0 9Z"></path>
+                                </svg>
+                                <div class="flex space-x-4 text-gray-400">
+                                    <a href="#" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg></a>
+                                    <a href="#" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">FeedWizex</h3>
+                            <p class="text-gray-400 mb-4">A form based feedback platform which reduces the time taken to get insights from customers' feedback. groqAPI is integrated for quicker and faster responses.</p>
+                        </div>
+                        <div class="flex flex-wrap text-sm text-gray-400 mt-4">
+                            <span class="mr-4 mb-2">Python</span>
+                            <span class="mr-4 mb-2">Flask</span>
+                            <span class="mr-4 mb-2">Docker</span>
+                        </div>
+                    </div>
+        
+                    <div data-tilt data-tilt-max="8" data-tilt-scale="1.03"
+                        class="bg-card rounded-lg border border-card p-6 flex flex-col justify-between interactive-glow transition-transform duration-300 reveal flex-shrink-0 w-[90%] sm:w-2/3 md:w-1/2 lg:w-[30%] snap-center"
+                        style="transition-delay: 450ms;">
+                        <div>
+                            <div class="flex justify-between items-center mb-4">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round" class="text-accent-color"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"></rect><line x1="3" y1="9" x2="21" y2="9"></line><line x1="9" y1="21" x2="9" y2="9"></line></svg>
+                                <div class="flex space-x-4 text-gray-400">
+                                    <a href="#" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path
+                                                d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                                            </path>
+                                        </svg></a>
+                                    <a href="#" class="hover:text-accent-color transition-colors interactive-link"><svg
+                                            xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                            stroke-linejoin="round">
+                                            <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                            <polyline points="15 3 21 3 21 9"></polyline>
+                                            <line x1="10" y1="14" x2="21" y2="3"></line>
+                                        </svg></a>
+                                </div>
+                            </div>
+                            <h3 class="text-2xl font-bold text-white mb-3">Source code for this page</h3>
+                            <p class="text-gray-400 mb-4">This is my portfolio and hosted on github pages.</p>
+                        </div>
+                        <div class="flex flex-wrap text-sm text-gray-400 mt-4">
+                            <span class="mr-4 mb-2">react.js</span>
+                            <span class="mr-4 mb-2">javascript</span>
+                            <span class="mr-4 mb-2">TailwindCSS</span>
+                            <span class="mr-4 mb-2">CSS</span>
+                        </div>
+                    </div>
+        
+                </div>
+        
+                <button id="scroll-left-btn" class="col-start-1 row-start-1 z-10 justify-self-start mx-2 bg-bg-card border border-border-color rounded-full w-6 h-6 flex items-center justify-center text-accent-color hover:bg-accent-color hover:text-black transition-all duration-300 opacity-0 cursor-none md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 18 9 12 15 6"></polyline></svg>
+                </button>
+        
+                <button id="scroll-right-btn" class="col-start-1 row-start-1 z-10 justify-self-end mx-2 bg-bg-card border border-border-color rounded-full w-6 h-6 flex items-center justify-center text-accent-color hover:bg-accent-color hover:text-black transition-all duration-300 cursor-none md:hidden">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 18 15 12 9 6"></polyline></svg>
+                </button>
+            </div>
+        </section>
+
+        <!-- <section id="contact" class="py-24 md:py-40 text-center">
+            <div class="max-w-xl mx-auto reveal">
+                <h2 class="text-2xl font-bold text-white"><span class="accent-color">06.</span> What's Next?</h2>
+                <h3 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-6">Get In Touch</h3>
+                <p class="text-lg text-gray-400 mb-8">
+                    I'm currently open to new opportunities and my inbox is always open. Whether you have a question, a
+                    project proposal, or just want to say hi, Just ping me up. I'll make sure to get back to you!
+                </p>
+                <a href="mailto:nishantsagar172@gmail.com"
+                    class="inline-block bg-accent-color text-black font-bold py-4 px-8 rounded-lg text-lg interactive-glow interactive-link transition-transform duration-300">
+                    Say Hello
+                </a>
+            </div>
+        </section>
+    </main> -->
+    <!-- <section id="contact" class="py-24 md:py-40">
+    <div class="max-w-2xl mx-auto reveal">
+        <h2 class="text-2xl font-bold text-white text-center"><span class="accent-color">06.</span> What's Next?</h2>
+        <h3 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-6 text-center">Get In Touch</h3>
+        <p class="text-lg text-gray-400 mb-12 text-center">
+            My inbox is always open. Whether you have a question, a project proposal, or just want to say hello, feel free to drop me a message using the form below. I'll get back to you as soon as possible!
+        </p>
+
+        <form action="FORM_URL" method="POST" class="space-y-6">
+            
+            <div class="flex flex-col">
+                <label for="name" class="mb-2 font-semibold text-gray-300">Full Name</label>
+                <input 
+                    type="text" 
+                    name="name" 
+                    id="name" 
+                    required
+                    class="w-full bg-card border border-border-color text-text-primary rounded-lg p-3 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition duration-300">
+            </div>
+            
+            <div class="flex flex-col">
+                <label for="email" class="mb-2 font-semibold text-gray-300">Email Address</label>
+                <input 
+                    type="email" 
+                    name="email" 
+                    id="email" 
+                    required
+                    class="w-full bg-card border border-border-color text-text-primary rounded-lg p-3 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition duration-300">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="message" class="mb-2 font-semibold text-gray-300">Message</label>
+                <textarea 
+                    name="message" 
+                    id="message" 
+                    rows="5" 
+                    required
+                    class="w-full bg-card border border-border-color text-text-primary rounded-lg p-3 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition duration-300 resize-none"></textarea>
+            </div>
+
+            <div class="text-center">
+                <button 
+                    type="submit"
+                    class="inline-block bg-accent-color text-black font-bold py-1 px-8 rounded-lg text-lg interactive-glow interactive-link transition-transform duration-300">
+                    Ping Me
+                </button>
+            </div>
+        </form>
+    </div>
+</section> -->
+
+
+<section id="contact" class="py-24 md:py-40">
+    <div class="max-w-2xl mx-auto reveal">
+        <h2 class="text-2xl font-bold text-white text-center"><span class="accent-color">06.</span> What's Next?</h2>
+        <h3 class="text-4xl md:text-5xl font-bold text-white mt-4 mb-6 text-center">Get In Touch</h3>
+        <p class="text-lg text-gray-400 mb-12 text-center">
+            My inbox is always open. Whether you have a question, a project proposal, or just want to say hello, feel free to drop me a message. I'll get back to you as soon as possible!
+        </p>
+
+        <form id="contact-form" class="space-y-6">
+            
+            <div class="flex flex-col">
+                <label for="name" class="mb-2 font-semibold text-gray-300">Full Name</label>
+                <input type="text" name="name" id="name" required class="w-full bg-card border border-border-color text-text-primary rounded-lg p-3 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition duration-300">
+            </div>
+            
+            <div class="flex flex-col">
+                <label for="email" class="mb-2 font-semibold text-gray-300">Email Address</label>
+                <input type="email" name="email" id="email" required class="w-full bg-card border border-border-color text-text-primary rounded-lg p-3 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition duration-300">
+            </div>
+
+            <div class="flex flex-col">
+                <label for="message" class="mb-2 font-semibold text-gray-300">Message</label>
+                <textarea name="message" id="message" rows="5" required class="w-full bg-card border border-border-color text-text-primary rounded-lg p-3 focus:outline-none focus:border-accent-gold focus:ring-1 focus:ring-accent-gold transition duration-300 resize-none"></textarea>
+            </div>
+
+            <div id="form-status" class="text-center h-6"></div>
+
+            <div class="text-center">
+                <button type="submit" class="inline-block bg-accent-color text-black font-bold py-1 px-8 rounded-lg text-lg interactive-glow interactive-link transition-transform duration-300">
+                    Ping Me
+                </button>
+            </div>
+        </form>
+    </div>
+</section>
+
+
+    <footer class="py-8 text-center text-gray-500">
+        <div class="flex justify-center space-x-6 mb-4">
+            <a href="https://www.github.com/Nishant-k-sagar" target="_blank" rel="noopener noreferrer"
+                class="hover:text-accent-color transition-colors interactive-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
+                    </path>
+                </svg>
+            </a>
+            <a href="https://www.linkedin.com/in/nishant-k-sagar/" target="_blank" rel="noopener noreferrer"
+                class="hover:text-accent-color transition-colors interactive-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                    <rect x="2" y="9" width="4" height="12"></rect>
+                    <circle cx="4" cy="4" r="2"></circle>
+                </svg>
+            </a>
+            <!-- <a href="https://twitter.com/your-username" target="_blank" rel="noopener noreferrer"
+                class="hover:text-accent-color transition-colors interactive-link">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path
+                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53 4.48 4.48 0 0 0-7.86 3v1A10.66 10.66 0 0 1 3 4s-4 9 5 13a11.64 11.64 0 0 1-7 2c9 5 20 0 20-11.5a4.5 4.5 0 0 0-.08-.83A7.72 7.72 0 0 0 23 3z">
+                    </path>
+                </svg>
+            </a> -->
+        </div>
+        <p>Designed & Built by Nishant K Sagar</p>
+    </footer>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js"></script>
+    <script src = "script.js"></script>
+    
+</body>
+
+</html>
+</body>
+
+</html>

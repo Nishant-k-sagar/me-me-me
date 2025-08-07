@@ -59,7 +59,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // --- Typewriter Logic ---
   const typewriterElement = document.getElementById("typewriter");
   const words = [
-    "one lazy soul.",
+    "one crazy soul.",
     "chess he he☺",
     "pretty li'l delusional.",
     "thinking...",
